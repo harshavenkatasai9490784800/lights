@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            margin-left: 250px;
+        }
+
+        button{
+            height: 20px;
+            width: 40px;
+        }
+        button:hover{
+            box-shadow: 10px;
+            cursor: pointer;
+        }
+        .red{
+            background-color: red;
+            margin-top: 20px;
+            margin-left: 40px;
+            border-color: rgb(150, 150, 150);
+            border-radius: 4px;
+        }
+        .red:hover{
+            background-color: rgb(253, 72, 72);
+            cursor: pointer;
+        }
+        .green{
+            background-color: rgb(0, 255, 106);
+            width: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 40px;
+            border-color: rgb(150, 150, 150);
+            border-radius: 4px;
+        }
+        .green:hover{
+            background-color: rgb(1, 88, 20);
+            cursor: pointer;
+        }
+        .blue{
+            background-color: rgb(71, 41, 243);
+            width: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 40px;
+            border-color: rgb(150, 150, 150);
+            border-radius: 4px;
+            color: aliceblue;
+        }
+        .blue:hover{
+            background-color: rgb(1, 88, 20);
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+    
+        <button onclick="document.getElementById('myImage').src='on.jpg'"> on </button>
+
+        <img id="myImage" src="off.jpg" style="width:200px">
+
+        <button onclick="document.getElementById('myImage').src='off.jpg'"> off </button>
+
+        <div class="Continer2">
+        <button class="red" onclick="document.getElementById('myImage').src='red.jpg'"> Red </button>
+
+        <button class="green" onclick="document.getElementById('myImage').src='green.jpg'"> Green </button>
+
+        <button class="blue" onclick="document.getElementById('myImage').src='blue.jpeg'"> Blue </button>
+
+        </div>
+
+</div>
+
+</body>
+</html>
